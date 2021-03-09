@@ -11,7 +11,7 @@ jobs:
     - name: Setup dotnet core sdk 5
       uses: actions/setup-dotnet@v1.7.2
       with:
-        dotnet-version: 5.0
+        dotnet-version: '5.0.x'
     - name: Publish dotnet core project
       run: dotnet publish pu-test.csproj -c Release -o release --nologo
     - name: Commit wwwroot to GitHub Pages
