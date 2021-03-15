@@ -1,17 +1,21 @@
 @inherits LayoutComponentBase
 
-<div class="page">
-    <div class="sidebar">
-        <NavMenu />
+<div>
+    <img id="puHeader" class="imgCenter" src="images/pu-logo.png" alt="Polyphonic Underground"/>
+
+    <NavMenu />
+
+    <div>
+        @Body
     </div>
 
-    <div class="main">
-        <div class="top-row px-4">
-            <a href="http://blazor.net" target="_blank" class="ml-md-auto">About</a>
-        </div>
-
-        <div class="content px-4">
-            @Body
-        </div>
+    <div class="socialLinks">      
+        <a href=https://twitter.com/polyphonic_und target="_blank">
+            <img src="../images/twitter.svg" alt="twitter"/>
+        </a>
+        <a href=https://www.youtube.com/channel/UC03tkMXEMrROOp_O9Toi5LA target="_blank">
+            <img src="../images/youtube.svg" alt="youtube"/>
+        </a>      
     </div>
+    <p>© 2021 Polyphonic Underground</p>
 </div>
